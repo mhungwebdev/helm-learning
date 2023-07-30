@@ -1,4 +1,4 @@
 replicas: 2
 imageInfo:
   imageName: mahhu/process-client
-  tag: 20230710
+  tag: "20230710"

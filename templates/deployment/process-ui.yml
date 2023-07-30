@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: process-ui
-        image: {{ .Values.imageInfo.imageName:.Values.imageInfo.tag }}:
+        image: {{ .Values.imageInfo.imageName }}:{{ .Values.imageInfo.tag }}
         ports:
         - containerPort: 8080

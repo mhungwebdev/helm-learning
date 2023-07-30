@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-process
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: mahhu.id.vn
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: process-ui-svc
+            port:
+              number: 8080

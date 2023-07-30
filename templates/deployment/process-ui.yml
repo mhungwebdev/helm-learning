@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: process-ui
-  namespace: 
+  namespace: process-app
 spec:
   replicas: {{ .Values.replicas }}
   selector:

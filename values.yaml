@@ -1,0 +1,6 @@
+cat <<EoF > example-project/values.yaml
+replicas: 2
+imageInfo:
+  imageName: mahhu/process-client
+  tag: 20230710
+EoF

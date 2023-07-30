@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: process-ui
+  namespace: 
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: process-ui
+  template:
+    metadata:
+      labels:
+        app: process-ui
+    spec:
+      containers:
+      - name: process-ui
+        image: {{ .Values.imageInfo.imageName }}:{{ .Values.imageInfo.tag }}
+        ports:
+        - containerPort: 8080

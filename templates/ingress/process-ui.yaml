@@ -410,7 +410,7 @@ spec:
     spec:
       containers:
       - args:
-        - /process-nginx-ingress-controller
+        - /nginx-ingress-controller
         - --publish-service=$(POD_NAMESPACE)/process-ingress-nginx-controller
         - --election-id=process-ingress-nginx-leader
         - --controller-class=k8s.io/process-ingress-nginx

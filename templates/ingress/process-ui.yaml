@@ -639,7 +639,7 @@ webhooks:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-process
+  name: process-ingress-nginx
 spec:
   ingressClassName: process-nginx
   rules:

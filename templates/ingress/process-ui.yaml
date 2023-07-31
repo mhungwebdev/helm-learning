@@ -640,6 +640,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: process-ingress-nginx
+  namespace: process-app
 spec:
   ingressClassName: process-nginx
   rules:

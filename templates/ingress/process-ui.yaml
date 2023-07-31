@@ -641,7 +641,7 @@ kind: Ingress
 metadata:
   name: ingress-process
 spec:
-  ingressClassName: nginx
+  ingressClassName: process-nginx
   rules:
   - host: mahhu.id.vn
     http:

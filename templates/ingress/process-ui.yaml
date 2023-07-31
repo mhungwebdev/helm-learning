@@ -8,7 +8,7 @@ spec:
   - host: mahhu.id.vn
     http:
       paths:
-      - path: /
+      - path: /process
         pathType: Prefix
         backend:
           service:
